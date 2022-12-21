@@ -51,7 +51,7 @@ jobs:
         continue-on-error: true
         run: |
           cd GUI_Web/
-          mvn test -DsuiteXMLFile=testng.xml -DexecutionAddress="local" -DtargetOperatingSystem="Windows-64" -DmaximumPerformanceMode="2" -DtargetBrowserName="GoogleChrome" -DgenerateAllureReportArchive="true"
+          mvn test -DexecutionAddress="local" -DtargetOperatingSystem="Windows-64" -DmaximumPerformanceMode="2" -DtargetBrowserName="GoogleChrome" -DgenerateAllureReportArchive="true" -Dtest="testng.xml"
 
       - name: Upload Allure Report as Pipeline Artifact
         if: always()
