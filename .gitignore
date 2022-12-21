@@ -23,3 +23,8 @@ debug.log
 /generateJdk.sh
 *.log
 /.settings/
+.metadata
+*.tmp
+local.properties
+.loadpath
+/.project/
