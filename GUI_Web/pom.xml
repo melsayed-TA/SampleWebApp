@@ -74,6 +74,11 @@
                             </value>
                         </property>
                     </properties>
+
+					<suiteXmlFiles>											<!-- Added by melsayed, to run a full testsuite from the testng.xml file-->
+						<suiteXmlFile>${suiteXMLFile}</suiteXmlFile>		<!-- Added by melsayed, to run a full testsuite from the testng.xml file-->		
+					</suiteXmlFiles>										<!-- Added by melsayed, to run a full testsuite from the testng.xml file-->
+
                 </configuration>
             </plugin>
         </plugins>
