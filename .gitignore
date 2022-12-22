@@ -34,3 +34,5 @@ bin/
 *.properties
 .project/
 .project
+.settings/
+.classpath/
