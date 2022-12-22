@@ -32,3 +32,5 @@ GUI_Web_Cucumber/.project
 /bin/
 bin/
 *.properties
+.project/
+.project
