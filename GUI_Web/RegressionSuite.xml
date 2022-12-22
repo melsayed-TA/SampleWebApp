@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sample Suite">
+	<test name="Sample Test" preserve-order="false">
+		<classes>
+			<class name="TestPackage.TestClass2" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
