@@ -31,3 +31,4 @@ local.properties
 GUI_Web_Cucumber/.project
 /bin/
 
+*.properties
