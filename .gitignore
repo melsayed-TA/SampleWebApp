@@ -38,3 +38,5 @@ bin/
 .classpath/
 *.gitignore/
 *.classpath/
+.target/
+*.target/
