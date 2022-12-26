@@ -2,7 +2,7 @@
 <suite name="Sample Suite">
 	<test name="Sample Test" preserve-order="false">
 		<classes>
-			<class name="TestPackage.TestClass2" />
+			<class name="TestPackage.TestClass3_MethodLevelParallelExecution" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
