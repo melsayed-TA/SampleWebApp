@@ -11,7 +11,7 @@
     <properties>
         <!-- Make sure you point to the latest release version: https://github.com/ShaftHQ/SHAFT_ENGINE/releases -->
         <shaft_engine.version>6.4.20221215</shaft_engine.version>
-		<suiteXMLFile>testng.xml</suiteXMLFile>				<!-- Added by melsayed, to run a full testsuite from the testng.xml file. Note that this can always be overridden in the cmd or CI/CD platform. Ex: mvn clean test -DsuiteXMLFile=RegressionSuite.xml-->
+		<suiteXmlFile>testng.xml</suiteXmlFile>				<!-- Added by melsayed, to run a full testsuite from the testng.xml file. Note that this can always be overridden in the cmd or CI/CD platform. Ex: mvn clean test -DsuiteXMLFile=RegressionSuite.xml-->
     </properties>
     <repositories>
         <repository>
@@ -76,9 +76,9 @@
                         </property>
                     </properties>
 
-					<suiteXmlFiles>											<!-- Added by melsayed, to run a full testsuite from the testng.xml file-->
-						<suiteXmlFile>${suiteXMLFile}</suiteXmlFile>		<!-- Added by melsayed, to run a full testsuite from the testng.xml file-->		
-					</suiteXmlFiles>										<!-- Added by melsayed, to run a full testsuite from the testng.xml file-->
+					<suiteXmlFiles>											
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>		<!-- Added to run a full testsuite from the testng.xml file-->		
+					</suiteXmlFiles>										
 
                 </configuration>
             </plugin>
