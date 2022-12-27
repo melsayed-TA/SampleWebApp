@@ -12,6 +12,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.Home;
 
+//Do not forget to configure the project for parallel execution before running this test class!
+
 public class TestClass3_MethodLevelParallelExecution {
     private static ThreadLocal<SHAFT.GUI.WebDriver> driver = new ThreadLocal<>();;
     private static ThreadLocal<SHAFT.TestData.JSON> testData = new ThreadLocal<>();; 
