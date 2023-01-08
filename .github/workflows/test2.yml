@@ -1,4 +1,4 @@
-name: Desktop Browsers Tests
+name: Desktop Browsers Tests - 2
 
 on:
   pull_request:
