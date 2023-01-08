@@ -37,7 +37,7 @@ public class TestClass3_MethodLevelParallelExecution {
         new Home(driver.get()).navigate().searchForQuery(testData.get().getTestData("searchQuery")).assertResultStatsIsNotEmpty();
     }
     
-    //Test3
+    //Test3 
     @Epic("SHAFT Web GUI Template")
     @Story("Google Basic Validations")@TmsLink("TC-003")
     @Description("Given I am on the Home page,\nWhen I search for a valid query,\nThen the result stats will show some data (will not be empty).")
@@ -57,7 +57,7 @@ public class TestClass3_MethodLevelParallelExecution {
 
     @BeforeMethod(description = "Setup Browser instance.")
     public void beforeMethod() {
-    	//Instantiations
+    	//Instantiations (driver & Testdata)
     	driver.set(new SHAFT.GUI.WebDriver());					
     	testData.set(new SHAFT.TestData.JSON("simpleJSON.json"));
     }
