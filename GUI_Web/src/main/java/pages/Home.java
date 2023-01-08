@@ -10,7 +10,7 @@ public class Home {
     private String url = "https://www.google.com/";
     private String title = "Google";
     private By searchBox = By.name("q");
-    private By acceptAllButton = By.name("L2AGLb");
+    private By acceptAllButton = By.xpath("//*[@id=\"L2AGLb\"]/div");
 
     public Home(SHAFT.GUI.WebDriver driver){
         this.driver = driver;
@@ -18,8 +18,13 @@ public class Home {
 
     @Step("When I navigate to the Home page.")
     public Home navigate(){
-        driver.browser().navigateToURL(url);
-        driver.element().click(acceptAllButton);
+        driver.browser().navigateToURL(url);       
+        
+        boolean isAcceptAllButtonDisplayed = driver.getDriver().findElement(acceptAllButton).isDisplayed();
+        if (isAcceptAllButtonDisplayed) {
+        	driver.element().click(acceptAllButton);
+		}
+ 
         return this;
     }
 
