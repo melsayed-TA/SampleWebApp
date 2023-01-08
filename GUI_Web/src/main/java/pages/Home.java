@@ -19,9 +19,8 @@ public class Home {
     @Step("When I navigate to the Home page.")
     public Home navigate(){
         driver.browser().navigateToURL(url);       
-        
-        boolean isAcceptAllButtonDisplayed = driver.getDriver().findElement(acceptAllButton).isDisplayed();
-        if (isAcceptAllButtonDisplayed) {
+ 		
+        if (driver.getDriver().findElements(acceptAllButton).size() != 0) {
         	driver.element().click(acceptAllButton);
 		}
  
